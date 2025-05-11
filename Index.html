@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Descargar</title>
+  <style>
+    body, html {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      font-family: Arial, sans-serif;
+      overflow: hidden;
+    }
+
+    /* Fondo animado con gradiente */
+    body {
+      background: linear-gradient(-45deg, #1e90ff, #ff69b4, #32cd32, #ffa500);
+      background-size: 400% 400%;
+      animation: gradient 15s ease infinite;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    @keyframes gradient {
+      0% {background-position: 0% 50%;}
+      50% {background-position: 100% 50%;}
+      100% {background-position: 0% 50%;}
+    }
+
+    /* Botón centrado */
+    .download-button {
+      padding: 20px 40px;
+      font-size: 20px;
+      color: white;
+      background-color: #333;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+      transition: background 0.3s ease;
+    }
+
+    .download-button:hover {
+      background-color: #555;
+    }
+  </style>
+</head>
+<body>
+  <button class="download-button">Descargar</button>
+</body>
+</html>
