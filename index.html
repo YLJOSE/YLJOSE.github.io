@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Descargar</title>
+  <title>YLJOSE</title>
   <style>
-    body, html {
+    body,
+    html {
       margin: 0;
       padding: 0;
       height: 100%;
@@ -13,7 +15,6 @@
       overflow: hidden;
     }
 
-    /* Fondo animado con gradiente */
     body {
       background: linear-gradient(-45deg, #1e90ff, #ff69b4, #32cd32, #ffa500);
       background-size: 400% 400%;
@@ -21,15 +22,26 @@
       display: flex;
       justify-content: center;
       align-items: center;
+      flex-direction: column;
+      text-align: center;
+      color: white;
+      padding: 20px;
     }
 
     @keyframes gradient {
-      0% {background-position: 0% 50%;}
-      50% {background-position: 100% 50%;}
-      100% {background-position: 0% 50%;}
+      0% {
+        background-position: 0% 50%;
+      }
+
+      50% {
+        background-position: 100% 50%;
+      }
+
+      100% {
+        background-position: 0% 50%;
+      }
     }
 
-    /* Botón centrado */
     .download-button {
       padding: 20px 40px;
       font-size: 20px;
@@ -38,16 +50,55 @@
       border: none;
       border-radius: 8px;
       cursor: pointer;
-      box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
       transition: background 0.3s ease;
+      margin-top: 20px;
     }
 
     .download-button:hover {
       background-color: #555;
     }
+
+    .description {
+      max-width: 600px;
+      margin-top: 20px;
+    }
+
+    img {
+      max-width: 90%;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+      margin-top: 30px;
+    }
+
+    footer {
+      position: absolute;
+      bottom: 20px;
+      color: white;
+      text-align: center;
+      width: 100%;
+    }
+
+    a {
+      color: #fff;
+      text-decoration: underline;
+    }
   </style>
 </head>
 <body>
-  <button class="download-button">Descargar</button>
+  <h1>¡Bienvenido!</h1>
+  <div class="description">
+      <p style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">
+      POMOTASK es una app basada en la técnica Pomodoro, diseñada para ayudarte a concentrarte, mejorar tu productividad y gestionar mejor tu tiempo.
+      Trabaja en ciclos de 25 minutos seguidos de descansos cortos. ¡Ideal para estudiar o trabajar!
+    </p>
+  </div>
+  <a href="apk/app-release.apk" download>
+    <button class="download-button">Descargar App</button>
+  </a>
+   <footer>
+    <p>Desarrollado por YLJOSE - <a href="mailto:manayayrojasjuanjose@gmail.com">Contáctame</a></p>
+  </footer>
 </body>
+
 </html>
